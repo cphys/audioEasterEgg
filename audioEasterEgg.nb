@@ -1,0 +1,86 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2947,         78]
+NotebookOptionsPosition[      2477,         63]
+NotebookOutlinePosition[      2811,         78]
+CellTagsIndexPosition[      2768,         75]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}]], "Input",
+ CellLabel->"In[10]:=",ExpressionUUID->"a7a43c8e-0f89-475e-a41e-86111d23568c"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"audioFile", "=", 
+   RowBox[{"Import", "[", 
+    RowBox[{
+     RowBox[{"FileNames", "[", 
+      RowBox[{"\"\<*.mp3\>\"", ",", 
+       RowBox[{"NotebookDirectory", "[", "]"}]}], "]"}], "[", 
+     RowBox[{"[", "1", "]"}], "]"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.739379215836288*^9, 3.7393792490316*^9}, {
+   3.7393792848902807`*^9, 3.739379293595257*^9}, {3.739573096658984*^9, 
+   3.739573110447255*^9}, {3.739573144400428*^9, 3.739573161233795*^9}, {
+   3.739573201068532*^9, 3.739573217557481*^9}, 3.739573341683694*^9},
+ CellLabel->"In[11]:=",ExpressionUUID->"7ad03c3d-1bd1-49be-b64a-4ae01f483a0f"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"NotebookDirectory", "[", "]"}], "<>", 
+     "\"\<spectrogram.png\>\""}], ",", 
+    RowBox[{"Spectrogram", "[", 
+     RowBox[{"audioFile", ",", 
+      RowBox[{"ImageSize", "\[Rule]", "1000"}], ",", 
+      RowBox[{"PlotRange", "\[Rule]", "Automatic"}], ",", 
+      RowBox[{"AspectRatio", "\[Rule]", ".5"}], ",", 
+      RowBox[{"PlotTheme", "\[Rule]", "\"\<Scientific\>\""}], ",", 
+      RowBox[{"ColorFunction", "\[Rule]", "\"\<RustTones\>\""}], ",", 
+      RowBox[{"ColorFunctionScaling", "\[Rule]", "True"}], ",", 
+      RowBox[{"FrameTicks", "\[Rule]", "None"}]}], "]"}]}], "]"}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.739571750346882*^9, 3.739571961754161*^9}, {
+   3.73957199605552*^9, 3.7395723532573137`*^9}, {3.739572560957471*^9, 
+   3.73957265264456*^9}, {3.739572868525475*^9, 3.739572916226984*^9}, 
+   3.73957317658687*^9, {3.7395732865136003`*^9, 3.739573308022605*^9}, {
+   3.739573389058702*^9, 3.739573470103002*^9}},
+ CellLabel->"In[12]:=",ExpressionUUID->"a66f700a-0edd-4753-b1f3-8c1fc97eaa5d"]
+},
+WindowSize->{1855, 1056},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"11.3 for Linux x86 (64-bit) (March 6, 2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 155, 2, 31, "Input",ExpressionUUID->"a7a43c8e-0f89-475e-a41e-86111d23568c"],
+Cell[716, 24, 650, 13, 31, "Input",ExpressionUUID->"7ad03c3d-1bd1-49be-b64a-4ae01f483a0f"],
+Cell[1369, 39, 1104, 22, 55, "Input",ExpressionUUID->"a66f700a-0edd-4753-b1f3-8c1fc97eaa5d"]
+}
+]
+*)
+
