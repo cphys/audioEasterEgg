@@ -1,6 +1,6 @@
-# Project Title
+# Mr. Robot Encrypted Spectrogram
 
-2 line code to take spectrogram of audio mp3. Able to find encrypted messages hidden in audio file.
+Returns spectrogram of audio mp3. Able to find encrypted messages hidden in audio file. 
 
 ## Getting Started
 
