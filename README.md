@@ -1,6 +1,8 @@
 # Mr. Robot Encrypted Spectrogram
 
-Returns spectrogram of audio mp3. Able to find encrypted messages hidden in audio file. 
+Returns spectrogram of audio mp3. Able to find encrypted messages hidden in audio file.
+
+![Hang in there](spectrogram.png)
 
 ## Getting Started
 
